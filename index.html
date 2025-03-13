@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviços Estéticos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d63384;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #d63384;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a12060;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Lading Page que irá dar cara e ajudará no marketing do nosso site-->
+    <div class="container">
+        <h1>Agende seus Serviços de Estética</h1>
+        <p>Facilite seu atendimento com nosso aplicativo de agendamento. Escolha seu horário de forma rápida e
+            eficiente.</p>
+        <button class="btn" onclick="simularAgendamento()">Baixe aqui nosso Aplicativo</button>
+        <p id="mensagem"></p>
+    </div>
+    <script>
+        function simularAgendamento() {
+            document.getElementById("mensagem").innerText = "Seu agendamento foi realizado com sucesso!";
+        }
+    </script>
+</body>
+
+</html>
